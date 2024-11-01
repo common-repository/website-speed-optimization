@@ -1,0 +1,226 @@
+{	
+	"option01" : {
+		"title" : "Basic Optimization",
+		"note"	: "",
+		"option" : {
+			"wso-o-01" : {
+				"id" 	: "wso-o-01",
+				"name"	: "Remove query strings",
+				"faq"	: "#",
+				"level" : "1",
+				"type"	: "checkbox"
+			},
+			"wso-o-02" : {
+				"id" 	: "wso-o-02",
+				"name"	: "Remove WordPress Emoji scripts",
+				"faq"	: "#",
+				"level" : "1",
+				"type"	: "checkbox"
+			},
+			"wso-o-03" : {
+				"id" 	: "wso-o-03",
+				"name"	: "Remove WordPress Shortlink",
+				"faq"	: "#",
+				"level" : "1",
+				"type"	: "checkbox"
+			},
+			"wso-o-04" : {
+				"id" 	: "wso-o-04",
+				"name"	: "Remove Adjacent Posts Links",
+				"faq"	: "#",
+				"level" : "1",
+				"type"	: "checkbox"
+			},
+			"wso-o-05" : {
+				"id" 	: "wso-o-05",
+				"name"	: "Remove Windows Live Writer Manifest",
+				"faq"	: "#",
+				"level" : "1",
+				"type"	: "checkbox"
+			},
+			"wso-o-06" : {
+				"id" 	: "wso-o-06",
+				"name"	: "Remove WordPress Version",
+				"faq"	: "#",
+				"level" : "1",
+				"type"	: "checkbox"
+			},
+			"wso-o-20" : {
+				"id" 	: "wso-o-20",
+				"name"	: "Remove api.w.org relation",
+				"faq"	: "#",
+				"level" : "1",
+				"type"	: "checkbox"
+			},
+			"wso-o-07" : {
+				"id" 	: "wso-o-07",
+				"name"	: "Disable Self Pingbacks",
+				"faq"	: "#",
+				"level" : "2",
+				"type"	: "checkbox"
+			},
+			"wso-o-08" : {
+				"id" 	: "wso-o-08",
+				"name"	: "Remove jQuery Migrate",
+				"faq"	: "#",
+				"level" : "2",
+				"type"	: "checkbox"
+			},
+			"wso-o-09" : {
+				"id" 	: "wso-o-09",
+				"name"	: "Remove Dashicons",
+				"faq"	: "#",
+				"level" : "2",
+				"type"	: "checkbox"
+			}
+		}		
+	},
+	"option02" : {
+		"title" : "Advanced Optimizations",
+		"note"	: "",
+		"option" : {
+			"wso-o-10" : {
+				"id" 	: "wso-o-10",
+				"name"	: "Remove REST API Links",
+				"faq"	: "#",
+				"level" : "2",
+				"type"	: "checkbox"
+			},
+			"wso-o-11" : {
+				"id" 	: "wso-o-11",
+				"name"	: "Remove all RSS feed links",
+				"faq"	: "#",
+				"level" : "2",
+				"type"	: "checkbox"
+			},
+			"wso-o-21" : {
+				"id" 	: "wso-o-21",
+				"name"	: "Disable XML-RPC",
+				"faq"	: "#",
+				"level" : "2",
+				"type"	: "checkbox"
+			}
+		}
+	},
+	"option04" : {
+		"title" : "CSS Optimization",
+		"note"	: "",
+		"option" : {
+			"wso-o-14" : {
+				"id" 	: "wso-o-14",
+				"name"	: "Inline all CSS",
+				"faq"	: "#",
+				"level" : "1",
+				"type"	: "checkbox"
+			},
+			"wso-o-15" : {
+				"id" 	: "wso-o-15",
+				"name"	: "Minify all CSS",
+				"faq"	: "#",
+				"level" : "2",
+				"type"	: "checkbox"
+			},
+			"wso-o-16" : {
+				"id" 	: "wso-o-16",
+				"name"	: "Move all CSS to footer",
+				"faq"	: "#",
+				"level" : "3",
+				"type"	: "checkbox"
+			}
+		}
+	},
+	"option05" : {
+		"title" : "JS Optimization",
+		"note"	: "When activating this function may cause an unexpected error, please use with care.",
+		"option" : {
+			"wso-o-19" : {
+				"id" 	: "wso-o-19",
+				"name"	: "Move all JS to footer",
+				"faq"	: "#",
+				"level" : "1",
+				"type"	: "checkbox"
+			},
+			"wso-o-17" : {
+				"id" 	: "wso-o-17",
+				"name"	: "Inline all JS",
+				"faq"	: "#",
+				"level" : "2",
+				"type"	: "checkbox"
+			},
+			"wso-o-18" : {
+				"id" 	: "wso-o-18",
+				"name"	: "Minify all JS",
+				"faq"	: "#",
+				"level" : "3",
+				"type"	: "checkbox"
+			},
+			"wso-o-27" : {
+				"id" 	: "wso-o-27",
+				"name"	: "Url CDN jQuery library",
+				"faq"	: "#",
+				"level" : "10",
+				"type"	: "textbox"
+			}
+		}
+	},
+	"option03" : {
+		"title" : "Html Optimizations",
+		"note"	: "When activating this function may cause an unexpected error, please use with care.",
+		"option" : {
+			"wso-o-13" : {
+				"id" 	: "wso-o-13",
+				"name"	: "Minify HTML",
+				"faq"	: "#",
+				"level" : "3",
+				"type"	: "checkbox"
+			}								
+		}
+	},
+	"option06" : {
+		"title" : "Add Expires headers",
+		"note"	: "Expires headers tell the browser whether they should request a specific file from the server or whether they should grab it from the browser's cache.",
+		"option" : {
+			"wso-o-20" : {
+				"id" 	: "wso-o-22",
+				"name"	: "Set expires header CSS",
+				"faq"	: "#",
+				"level" : "3",
+				"type"	: "checkbox"
+			},
+			"wso-o-21" : {
+				"id" 	: "wso-o-23",
+				"name"	: "Set expires header JS",
+				"faq"	: "#",
+				"level" : "3",
+				"type"	: "checkbox"
+			},
+			"wso-o-22" : {
+				"id" 	: "wso-o-24",
+				"name"	: "Set expires header Media",
+				"faq"	: "#",
+				"level" : "3",
+				"type"	: "checkbox"
+			}
+		}
+	},
+	"option07" : {
+		"title" : "Cache CSS JS",
+		"note"	: "",
+		"option" : {
+			"wso-o-25" : {
+				"id" 	: "wso-o-25",
+				"name"	: "Cache Css",
+				"faq"	: "#",
+				"level" : "0",
+				"type"	: "checkbox"
+			},
+			"wso-o-26" : {
+				"id" 	: "wso-o-26",
+				"name"	: "Cache Js",
+				"faq"	: "#",
+				"level" : "0",
+				"type"	: "checkbox"
+			}
+		}
+	}
+}

@@ -1,0 +1,312 @@
+.wrap.wso-wrap{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-size: 15px;
+    color: #2d2d2d;
+}
+@media (min-width: 1200px){
+	.wso-wrap{ max-width: 1170px; }	
+}
+.wso-container-flush::before, .wso-container-flush::after, .wso-row::before, .wso-row::after, .wso-row>div::before, .wso-row>div::after{
+	content: " ";
+	display: table;
+}
+.wso-container-flush{
+	padding-left: 15px;
+		padding-right: 15px;
+		margin-right: auto;
+	margin-left: auto;
+}
+.wso-row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.wso-col-12{ width: 100%; }
+.wso-col-4{ width: calc(25% - 30px); }
+.wso-title{ 
+	font-weight: bold !important;
+    color: #2d2d2d !important;
+    font-size: 22px !important;
+    margin-bottom: 10px !important;
+}
+.wso-box{
+	position: relative;
+    margin: 0 auto 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(200,215,225,0.25), 0 1px 2px #e9eff3;
+}
+.wso-box-off{
+    position: relative;
+}
+.wso-box-off::after{
+    content: '';
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: no-drop;
+}
+.wso-box-off label{ pointer-events: none; }
+.wso-title-box{
+	font-weight: bold !important;
+	font-size: 18px !important;
+}
+#wso.wso-box-off::after{ cursor: wait; }
+.wso-active-plugin{ display: flex; }
+.wso-active-plugin li{ width: 50%; }
+.wso-enabled{
+	position: relative;
+	width: 100%;
+    margin: 0;
+    font-size: 0;
+    width: 300px;
+}
+.wso-enabled input{
+	height: 40px;
+    width: 6rem;
+    left: 6rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+.wso-enabled input:checked{
+	z-index: 1;
+}
+.wso-enabled label {
+    color: #222;
+    font-size: 16px;
+    opacity: 0.33;
+    transition: opacity 0.25s ease;
+    cursor: pointer;
+    line-height: 30px;
+    display: inline-block;
+    width: 6rem;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+.wso-enabled label:last-of-type {
+    margin-left: 6rem;
+}
+.wso-enabled input:checked + label {
+    opacity: 1;
+    cursor: default;
+}
+.wso-enabled .toggle-outside {
+    background: #fff;
+    position: absolute;
+    width: 6rem;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    height: 100%;
+    border-radius: 2rem;
+    padding: 0.25rem;
+    overflow: hidden;
+    transition: 0.25s ease all;
+    border: 1px solid #e2e2e2;
+}
+.wso-enabled .toggle-inside {
+    height: 30px;
+    width: 35px;
+    border-radius: 5rem;
+    background: #1E8CBE;
+    position: absolute;
+    transition: 0.25s ease all;
+}
+.wso-enabled input:checked ~ .toggle-outside .toggle-inside {
+    left: 0.25rem;
+}
+.wso-enabled input ~ input:checked ~ .toggle-outside .toggle-inside {
+    left: 4.05rem;
+}
+.wso-options{ cursor: pointer; }
+.wso-options input[type=radio]{
+	border-radius: 3px;
+	position: relative;
+	width: 21px;
+	height: 21px;
+    border: 1px solid #1E8CBE;
+}
+.wso-options input[type=radio]:before{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+	border-radius: 0;
+}
+.wso-options input[type=radio]:checked:before{
+    content: "\f147";
+    text-indent: 0;
+    background-color: unset;
+    color: #1E8CBE;
+    transform: translate(-3px, -2px);
+    text-align: center;
+    line-height: 1;
+    font-family: dashicons;
+    font-size: 24px;
+}
+.wso_setting input[type=text]{
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+.wso-options{
+	border: 1px solid #ddd;
+}
+.wso-options li{
+    margin: 0;
+    padding: 10px;
+}
+.wrap.wso-wrap .wso-options li:first-child{	
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+}
+.wrap.wso-wrap .wso-options li:first-child label{
+	
+}
+.wrap.wso-wrap .wso-options.active li:first-child{
+	background: #1E8CBE;
+}
+.wrap.wso-wrap .wso-options.active li:first-child label{
+	color: #fff;
+}
+.wso-box .wso_setting li{
+    display: block;
+    padding: 20px;
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+.wso-box .wso_setting input[type=checkbox]{
+    width: 25px;
+    height: 25px;    
+    box-shadow: none;
+    border-radius: 3px;
+    border: 1px solid #1E8CBE;
+    margin-right: 30px;
+}
+.wso-box .wso_setting input[type=checkbox]:checked{
+    background: #1E8CBE;    
+}
+.wso-box .wso_setting input[type=checkbox]:checked:before{
+    content: "\f147";
+    color: #fff;
+    margin: 0;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    transform: translate(-2px, 12px);
+    font-family: dashicons;
+    font-size: 24px;
+}
+a.wso_faq{
+    text-decoration: none;
+    color: #333;
+    outline: none;
+    display: none;
+}
+a.wso_faq i{
+    vertical-align: middle;
+}
+/* ==== */
+.wso_update_fix{
+    background: #fff;
+    height: 79px;
+}
+.wso_update{
+    z-index: 10;
+    background: #fff;
+    padding: 20px 0 20px 20px;
+    text-align: right;
+    left: 0;
+    right: 0;    
+    width: auto;
+    position: fixed;
+    box-shadow: 0px 0px 5px 0px #ddd;
+    top: 32px;
+}  
+.wso_update button{
+    margin-right: 20px;
+    padding: .5rem 1.25rem;
+    font-size: .875rem;
+    line-height: 1.3125rem;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #1E8CBE;
+    border-color: #005e85;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.wso_update button:hover{
+    opacity: 0.8;
+}
+.wso-box .wso_setting li.wso_note{
+    background-color: #d93025;
+    color: #fff;
+    font-weight: 500;
+    font-style: italic;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#wp-admin-bar-wso_bar a .wso-icon{
+    width: 25px;
+    height: 32px;
+    display: block;
+    float: left;
+    position: relative;
+}
+#wp-admin-bar-wso_bar a .wso-icon:before{
+    content: '';
+    background: url(icon.png) no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+@media (min-width: 1200px){
+    .wso_update{
+        margin-left: -20px;
+        left: 180px;
+        right: 0;        
+    }
+}
+@media (max-width: 768px){
+    .wso-active-plugin{
+        flex-wrap: wrap;
+    }
+    .wso-active-plugin li{
+        width: 100%;
+        min-height: 15px;
+    }
+    .wso-col-4{
+        width: 100%;
+        padding: 0px 30px;
+    }
+    .wso_update{
+        top: 46px;
+    }
+}
